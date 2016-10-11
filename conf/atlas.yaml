@@ -1,0 +1,38 @@
+config:
+    domain: soc6.benningen.midokura.de
+    SLE12: http://192.168.6.1/SUSE/SLE-12-SP1-Server-DVD-x86_64-GM-DVD1.iso
+    SOC6: http://192.168.6.1/SUSE/SUSE-OPENSTACK-CLOUD-6-x86_64-GM-DVD1.iso
+
+roles:
+    crowbar:
+    - soc6admin
+
+    nodes:
+    - soc6081
+    - soc6082
+    - soc6083
+    - soc6084
+    - soc6085
+    - soc6086
+
+    jumper:
+    - jumper
+
+servers:
+    jumper:
+        ip: 192.168.1.5
+    soc6admin:
+        ip: 192.168.1.10
+    soc6081:
+        ip: 192.168.1.81
+    soc6082:
+        ip: 192.168.1.82
+    soc6083:
+        ip: 192.168.1.83
+    soc6084:
+        ip: 192.168.1.84
+    soc6085:
+        ip: 192.168.1.85
+    soc6086:
+        ip: 192.168.1.86
+
